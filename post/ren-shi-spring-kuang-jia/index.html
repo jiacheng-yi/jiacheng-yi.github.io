@@ -1,22 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://jiacheng-yi.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-02-05T14:02:01.567Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://jiacheng-yi.github.io"/>
-    <link rel="self" href="https://jiacheng-yi.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://jiacheng-yi.github.io/images/avatar.png</logo>
-    <icon>https://jiacheng-yi.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[认识Spring框架]]></title>
-        <id>https://jiacheng-yi.github.io/post/ren-shi-spring-kuang-jia</id>
-        <link href="https://jiacheng-yi.github.io/post/ren-shi-spring-kuang-jia">
-        </link>
-        <updated>2020-02-05T14:01:01.000Z</updated>
-        <content type="html"><![CDATA[<p>Spring框架是Java应用最广的框架，它的<strong>成功来源于理念，而不是技术本身</strong>，它的理念包括<strong>IOC（Inversion of Control 控制反转）<strong>和</strong>AOP(Aspect Oriented Proramming 面向切面编程)</strong></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>认识Spring框架 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://jiacheng-yi.github.io/favicon.ico?v=1580911306584">
+<link rel="stylesheet" href="https://jiacheng-yi.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="Spring框架是Java应用最广的框架，它的成功来源于理念，而不是技术本身，它的理念包括IOC（Inversion of Control 控制反转）和AOP(Aspect Oriented Proramming 面向切面编程)
+什么是Sp..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://jiacheng-yi.github.io">
+        <img src="https://jiacheng-yi.github.io/images/avatar.png?v=1580911306584" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://jiacheng-yi.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">认识Spring框架</h2>
+            <div class="post-date">2020-02-05</div>
+            
+            <div class="post-content" v-pre>
+              <p>Spring框架是Java应用最广的框架，它的<strong>成功来源于理念，而不是技术本身</strong>，它的理念包括<strong>IOC（Inversion of Control 控制反转）<strong>和</strong>AOP(Aspect Oriented Proramming 面向切面编程)</strong></p>
 <h2 id="什么是spring">什么是Spring：</h2>
 <p>Spring是一个轻量级的 **DI/IOC和AOP容器的开源框架，**来源于Rob Johnson 在其著作 **《Expert one on one J2EE design and development 》**中阐述的部分理念和原型衍生而来。</p>
 <p>Spring提倡以 **”最小侵入“**的方式来管理应用中的代码，这意味着我么们可以随时卸载和安装Spring</p>
@@ -54,21 +133,46 @@
 <strong>④.Spring</strong> 还<strong>提供了与第三方数据访问框架（如Hibernate、JPA）无缝集成</strong>，而且自己也提供了一套<strong>JDBC访问模板</strong>来方便数据库访问。<br>
 <strong>⑤.Spring</strong> 还提供与<strong>第三方Web（如Struts1/2、JSF）框架无缝集成</strong>，而且自己也提供了一套<strong>Spring MVC</strong>框架，来方便web层搭建。<br>
 <strong>⑥.Spring</strong> 能<strong>方便的与Java EE（如Java Mail、任务调度）整合</strong>，与<strong>更多技术整合（比如缓存框架）</strong>。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于毕业设计]]></title>
-        <id>https://jiacheng-yi.github.io/post/guan-yu-bi-ye-she-ji</id>
-        <link href="https://jiacheng-yi.github.io/post/guan-yu-bi-ye-she-ji">
-        </link>
-        <updated>2020-02-03T08:25:01.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="图片管理系统-相册管理系统">图片管理系统  相册管理系统</h2>
-<p>开题报告<br>
-计划打算javaee开发，后端采用spring boot框架</p>
-<h2 id="明确任务">明确任务</h2>
-<p>网络相册管理系统的研究与设计</p>
-<h2 id="已有资料">已有资料</h2>
-<p>毕业论文参考</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://jiacheng-yi.github.io/post/guan-yu-bi-ye-she-ji">
+                  <h3 class="post-title">
+                    关于毕业设计
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
